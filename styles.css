@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: "Fira Code", sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+}
+
+#myCanvas {
+    background-color: #2a5;
+}
+
+button, .button, .file-input-label {
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #0d6efd;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0,0,0,0.75);
+    border: 1px solid transparent;
+    padding: 6px 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+button.not-active, .button.not-active {
+    background-color: #b7b9bd;
+    filter: grayscale(75%);
+}
+button:hover, .button:hover, .file-input-label:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#separator {
+    display: block;
+    width: 3px;
+    height: 40px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+#osmPanel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 5000px;
+}
+#osmPanel.hidden {
+    display: none;
+}
+#osmPanel textarea {
+    background: rgb(90, 90, 90);
+    border-radius: 5px;
+    color: white;
+    margin: 15px;
+}
+#osmPanel textarea::placeholder {
+    color: white;
+}
+#osmPanel button {
+    background-color: rgb(40, 136, 1);
+    color: white;
+    font-size: 20px;
+    width: 44px;
+    height: 44px;
+}
+#osmPanel button:first-of-type {
+    background-color: rgb(40, 136, 1);
+}
+#osmPanel button:last-of-type {
+    background-color: rgb(136, 1, 1);
+}

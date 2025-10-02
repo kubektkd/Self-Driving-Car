@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI World - World Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="menu">
+    <a href="index.html" class="button not-active">Real Map</a>
+    <a href="ai.html" class="button not-active">AI</a>
+    <a href="world-editor.html" class="button">World Editor</a>
+  </div>
+  <h1>World Editor</h1>
+  <canvas id="myCanvas"></canvas>
+  <div id="controls">
+    <button id="disposeBtn">🗑️ Dispose</button>
+    <button id="saveBtn">💾 Save</button>
+    <label for="fileInput" class="file-input-label">
+      📁 Load
+      <input
+        type="file"
+        id="fileInput"
+        accept=".world"
+      />
+    </label>
+    <button id="osmPanelBtn">🗺️ Import</button>
+    <div id="separator"></div>
+    <button id="graphBtn">🌍 World</button>
+    <button id="crossingBtn">🚶‍️ Crossing</button>
+    <button id="yieldBtn">🔻 Yield</button>
+    <button id="stopBtn">🛑 Stop</button>
+    <button id="lightBtn">🚦️ Lights</button>
+    <button id="parkingBtn">🅿️ Parking</button>
+    <button id="spawnBtn">🚘️ Spawn</button>
+    <button id="targetBtn">🎯 Target</button>
+  </div>
+
+  <div id="osmPanel" class="hidden">
+    <textarea name="openStreetMapData" id="osmDataContainer" cols="50" rows="15" placeholder="Paste OpenStreetMap data here..."></textarea>
+    <button id="parseOsmDataBtn">✔</button>
+    <button id="closeOsmPanelBtn">✘</button>
+  </div>
+
+  <script type="module" defer src="js/world-editor.js"></script>
+</body>
+</html>

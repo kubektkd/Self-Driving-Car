@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI World - Self-driving car</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="menu">
+    <a href="index.html" class="button not-active">Real Map</a>
+    <a href="ai.html" class="button">AI</a>
+    <a href="world-editor.html" class="button not-active">World Editor</a>
+  </div>
+  <h1>AI - Self-driving car</h1>
+  <div class="wrapper" style="display: flex; justify-content: center; align-items: center;">
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons" style="display: flex; flex-direction: column; row-gap: 10px;">
+      <button id="saveBtn" title="Save best car">💾</button>
+      <button id="discardBtn" title="Discard saved brain">🗑️</button>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+  </div>
+
+  <script type="module" defer src="js/ai.js"></script>
+</body>
+</html>
