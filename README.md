@@ -1,6 +1,8 @@
-# AI World
+# Self-Driving Car
 
 A browser-based simulation where neural-network-driven cars learn to navigate roads on a canvas. Built with vanilla JavaScript and the Canvas 2D API — no frameworks, no build step.
+
+<img width="1911" height="936" alt="image" src="https://github.com/user-attachments/assets/3af96725-686b-42d6-b544-dbbbcaec1ea9" />
 
 ## Modes
 
